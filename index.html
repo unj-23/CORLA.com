@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORLA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FB2056',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/7aa6d504e7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full">
+        <div class="flex justify-between gap-5 w-full items-center py-3 px-5 md:px-20">
+            <a href="#">
+                <h1 class="text-white font-bold text-justify text-2xl spac leading-none tracking-wider">OUTDOOR</h1>
+                <h1 class="text-white tracking-[0.3em]">ADVENTURE</h1>
+            </a>
+    
+            <!-- Navitem Desktop -->
+            <div class="hidden md:flex items-center gap-10">
+                <ul class="flex gap-8">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About</a></li>
+                    <li><a href="#" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Projects</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                </ul>
+                <button
+                    class="bg-primary mx-auto block text-white font-semibold px-8 py-3 rounded-full text-sm uppercase">Take
+                    Action</button>
+            </div>
+    
+            <!-- Burger 😋 -->
+            <button class="md:hidden px-3 py-2" onclick="toggleBurger()">
+                <i class="fa-solid fa-bars text-white text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Navitem Mobile -->
+        <div id="nav-mobile" class="md:hidden transition-all overflow-hidden" style="height: 0px;">
+            <ul class="text-center">
+                <li class="py-3"><a href="#" class="text-white">Home</a></li>
+                <li class="py-3"><a href="#" class="text-white">About</a></li>
+                <li class="py-3"><a href="#" class="text-white">Services</a></li>
+                <li class="py-3"><a href="#" class="text-white">Projects</a></li>
+                <li class="py-3"><a href="#" class="text-white">Contact</a></li>
+            </ul>
+            <a href="#"
+                class="w-fit bg-primary mx-auto block text-white font-semibold px-8 py-3 rounded-full text-sm uppercase">Take
+                Action</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div
+        class="bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./assets/img/hero.jpg')] bg-center bg-cover min-h-screen flex justify-center items-center">
+        <div>
+            <h2 class="text-center text-white font-bold text-2xl">Welcome To</h2>
+            <div class="h-[2px] rounded-full w-[60px] bg-primary mx-auto my-6"></div>
+            <h1 class="text-center text-white font-bold text-7xl mb-16 tracking-wide">CORLA</h1>
+            <a href="#"
+                class="w-fit bg-primary mx-auto block text-white font-semibold px-8 py-3 rounded-full text-sm uppercase">Learn
+                More</a>
+        </div>
+    </div>
+
+    <!-- Quote & Mulai Membuat Surat Section -->
+    <section class="py-12 lg:px-32">
+        <div class="mb-32 px-4">
+            <p class="text-center text-lg mb-2">"Disetiap kemudahan selalu ada tanggung jawab dibelakangnya."</p>
+            <p class="text-center">-Unknown</p>
+        </div>
+
+        <div>
+            <h1 class="text-center font-bold text-3xl md:text-5xl uppercase px-4">Mulai Membuat Surat</h1>
+            <div class="h-[2px] rounded-full w-[120px] bg-primary mx-auto mt-6 mb-16"></div>
+
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 p-10">
+                    <img src="./assets/img/hero.jpg" alt="" class="rounded-lg mb-10 w-full object-cover">
+                    <div class="px-3">
+                        <h4 class="text-center font-bold text-lg mb-4">Surat Permintaan Penawaran</h4>
+                        <p class="text-center mb-4">Surat Permintaan Penawaran adalah surat yang ditulis oleh calon
+                            pembeli
+                            kepada penjual dengan tujuan menanyakan informasi tentang barang yang akan dibeli</p>
+                        <a href="#"
+                            class="bg-primary w-fit mx-auto text-white font-semibold px-8 py-3 rounded-full text-sm uppercase flex justify-center items-center gap-3">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-right-long text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10">
+                    <img src="./assets/img/hero.jpg" alt="" class="rounded-lg mb-10 w-full object-cover">
+                    <div class="px-3">
+                        <h4 class="text-center font-bold text-lg mb-4">Surat Penawaran</h4>
+                        <p class="text-center mb-4">Surat Penawaran merupakan surat yang berisi tentang penawaran suatu
+                            barang atau jasa yang ditujukan kepada perseorangan atau instansi perusahaan atau biasa
+                            disebut juga sebagai surat jual</p>
+                        <a href="#"
+                            class="bg-primary w-fit mx-auto text-white font-semibold px-8 py-3 rounded-full text-sm uppercase flex justify-center items-center gap-3">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-right-long text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10">
+                    <img src="./assets/img/hero.jpg" alt="" class="rounded-lg mb-10 w-full object-cover">
+                    <div class="px-3">
+                        <h4 class="text-center font-bold text-lg mb-4">Surat Pesanan</h4>
+                        <p class="text-center mb-4">Surat Pesanan adalah surat yang dibuat oleh pembeli dan ditujukan
+                            kepada
+                            penjual. Surat pesanan dikirimkan sebagai balasan dari surat penawaran</p>
+                        <a href="#"
+                            class="bg-primary w-fit mx-auto text-white font-semibold px-8 py-3 rounded-full text-sm uppercase flex justify-center items-center gap-3">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-right-long text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10">
+                    <img src="./assets/img/hero.jpg" alt="" class="rounded-lg mb-10 w-full object-cover">
+                    <div class="px-3">
+                        <h4 class="text-center font-bold text-lg mb-4">Surat Undangan</h4>
+                        <p class="text-center mb-4">Surat Undangan merupakan surat yang biasanya berisi ajakan kepada
+                            seseorang untuk mengikuti kegiatan atau acara yang diadakan oleh si pengirim surat</p>
+                        <a href="#"
+                            class="bg-primary w-fit mx-auto text-white font-semibold px-8 py-3 rounded-full text-sm uppercase flex justify-center items-center gap-3">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-right-long text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Navbar transparancy
+        const navEl = document.querySelector('#navbar');
+
+        const backgroundTransparacy = () => {
+            let backgroundTransparacyVar = window.scrollY / 800;
+            if (backgroundTransparacyVar >= 0.8) {
+                backgroundTransparacyVar = 0.8;
+            }
+            return backgroundTransparacyVar
+        }
+
+        const handleScroll = () => {
+            navEl.style.background = `rgba(0,0,0,${backgroundTransparacy()})`
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        // Nav Mobile
+        const navMobileEl = document.querySelector('#nav-mobile');
+        const toggleBurger = () => {
+            const height = navMobileEl.style.height
+            if(height === '0px') {
+                navMobileEl.style.height = '100vh'
+                navEl.style.background = 'rgba(0,0,0,0.8)'
+                window.removeEventListener("scroll", handleScroll);
+            } else {
+                navMobileEl.style.height = '0px'
+                navEl.style.background = `rgba(0,0,0,${backgroundTransparacy()})`
+                window.addEventListener("scroll", handleScroll);
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
